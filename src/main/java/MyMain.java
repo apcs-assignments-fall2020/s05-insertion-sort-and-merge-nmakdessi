@@ -6,13 +6,13 @@ public class MyMain {
     public static ArrayList<Integer> insertionSort(ArrayList<Integer> list) {
         ArrayList<Integer> sorted = new ArrayList<Integer>();
         for (int i = 0; i < list.size(); i++){
-            int temp = list.at(i);
+            int temp = list.get(i);
             if (list.isEmpty() == true){
                 sorted.add(temp);
             }
             else{
                 for (int j = 0; j < sorted.size(); j++){
-                    if (temp < sorted.at(j)){
+                    if (temp < sorted.get(j)){
                         sorted.add(j, temp);
                         break;
                     }
